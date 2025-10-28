@@ -22,7 +22,7 @@ public class DatabaseInitializer {
             // Insert sample data
             insertSampleData(conn);
             
-            System.out.println("✓ Database initialized successfully!");
+            System.out.println(" Database initialized successfully!");
             
         } catch (SQLException e) {
             System.out.println("Error initializing database: " + e.getMessage());
@@ -133,7 +133,7 @@ public class DatabaseInitializer {
             """;
             stmt.execute(createLogsTable);
             
-            System.out.println("✓ Database tables created successfully!");
+            System.out.println(" Database tables created successfully!");
         }
     }
     
@@ -180,7 +180,7 @@ public class DatabaseInitializer {
             """;
             stmt.execute(insertEmployees);
             
-            System.out.println("✓ Sample data inserted successfully!");
+            System.out.println("Sample data inserted successfully!");
         }
     }
 }
